@@ -76,17 +76,54 @@
       font-style: italic;
       background: #f0f4ff;
     }
+    .contact-form {
+      margin-top: 20px;
+    }
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .contact-form button {
+      background-color: #004080;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .team-member {
+      margin-bottom: 20px;
+    }
+    .values {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .value-box {
+      flex: 1 1 45%;
+      background: #eef4ff;
+      padding: 15px;
+      border-left: 4px solid #004080;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Immigration General Services LLC</h1>
-    <p>Your One-Stop Shop for Immigration Support</p>
+    <p>Your one-stop center for immigration support</p>
   </header>
 
   <nav>
     <a href="#about">About Us</a>
     <a href="#services">Services</a>
+    <a href="#why">Why Choose Us</a>
+    <a href="#team">Our Team</a>
+    <a href="#values">Our Values</a>
     <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -101,60 +138,84 @@
   </div>
 
   <div class="hero">
-    <div>
-      Empowering Immigrants with Reliable, Friendly, and Professional Support
-    </div>
+  <div>
+    Empowering immigrants with reliable, compassionate, and professional support
+  </div>
+</div>
+
+<!-- Image Carousel Section -->
+<section style="padding: 0; margin-top: -20px;">
+  <div style="display: flex; overflow-x: auto; scroll-snap-type: x mandatory;">
+    <img src="https://source.unsplash.com/800x400/?immigrant,family" alt="Immigrant Family" style="width:100%; flex: 0 0 auto; scroll-snap-align: start;" />
+    <img src="https://source.unsplash.com/800x400/?happy,diversity" alt="Happy Group" style="width:100%; flex: 0 0 auto; scroll-snap-align: start;" />
+    <img src="https://source.unsplash.com/800x400/?chicago,city" alt="Chicago City" style="width:100%; flex: 0 0 auto; scroll-snap-align: start;" />
+    <img src="https://source.unsplash.com/800x400/?houston,skyline" alt="Houston Skyline" style="width:100%; flex: 0 0 auto; scroll-snap-align: start;" />
+    <img src="https://source.unsplash.com/800x400/?orlando,skyline" alt="Orlando City" style="width:100%; flex: 0 0 auto; scroll-snap-align: start;" />
+  </div>
+</section>
   </div>
 
   <section id="about">
-    <h2>About Us</h2>
-    <p>
-      Immigration General Services LLC is built on the belief that immigrants deserve more than just legal paperwork—they deserve respect, understanding, and support from people who know their journey. We offer a warm, inclusive environment where our clients can receive comprehensive immigration support—from start to finish.
-    </p>
-    <p>
-      We connect you with the best attorneys, certified translators, experienced paralegals, and notary services. With us, you don't need to look anywhere else. We are immigrants helping immigrants.
-    </p>
-  </section>
+  <h2>About Us</h2>
+  <p>
+    Immigration General Services LLC is built on the belief that immigrants deserve more than just legal paperwork—they deserve respect, understanding, and support from people who know their journey. We offer a warm, inclusive environment where our clients can receive comprehensive immigration support from start to finish.
+  </p>
+  <p>
+    We connect you with trusted attorneys, certified translators, trained paralegals, and public notaries. With us, you don’t have to search elsewhere. We are immigrants helping immigrants.
+  </p>
+</section>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Immigration Form Preparation & Filing</li>
-      <li>Attorney Referrals and Legal Representation Coordination</li>
-      <li>Document Translation (Certified)</li>
-      <li>Paralegal Assistance for Asylum, TPS, Adjustment of Status</li>
-      <li>Notary Public Services</li>
-      <li>Consultations on Your Immigration Strategy</li>
-      <li>Support in English, Spanish, French, and Portuguese</li>
-    </ul>
-  </section>
+<section id="why">
+  <h2>Why Choose Us</h2>
+  <p>
+    What sets us apart is that many members of our team were once clients themselves. Today, they bring their firsthand experience and deep empathy to help others on their journey. Our partner attorneys bring over 30 years of combined experience advocating for immigrant rights in court.
+  </p>
+  <p>
+    We have a proven record of success—in and out of court. Many of our former clients have achieved favorable outcomes and are now proud, productive members of their communities across the United States.
+  </p>
+  <p>
+    We know what you're going through—we've been there. That’s why we are fully committed to navigating the process with responsibility, transparency, and a steadfast dedication to the law.
+  </p>
+</section>
 
-  <section id="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial">
-      <p>"Immigration General Services truly understands what it's like to be an immigrant. They guided me with patience and care every step of the way."</p>
-      <p><strong>- Maria G.</strong></p>
+<section id="team">
+  <h2>Our Team</h2>
+  <div class="team-member">
+    <h3>Gabriel Jimenez — Founder & Director</h3>
+    <p>A former attorney and banker in Venezuela, Gabriel transformed his personal immigration journey into a mission of advocacy. Today, he leads a diverse and passionate team with empathy and vision.</p>
+  </div>
+  <div class="team-member">
+    <h3>Partner Attorneys</h3>
+    <p>We collaborate with licensed attorneys across various U.S. jurisdictions, experienced in asylum, deportation defense, TPS, adjustment of status, and more.</p>
+  </div>
+  <div class="team-member">
+    <h3>Paralegals & Translators</h3>
+    <p>Bilingual professionals trained to serve with accuracy, cultural sensitivity, and human care.</p>
+  </div>
+  <div class="team-member">
+    <h3>Former Clients Turned Collaborators</h3>
+    <p>Our greatest pride is seeing clients return as team members, committed to guiding others through the same path with hope and integrity.</p>
+  </div>
+</section>
+
+<section id="values">
+  <h2>Our Values</h2>
+  <div class="values">
+    <div class="value-box">
+      <h4>✅ Responsibility</h4>
+      <p>We take your future seriously—approaching every case with excellence and ethical care.</p>
     </div>
-    <div class="testimonial">
-      <p>"Professional, kind, and effective. The team made my immigration process smooth and stress-free. Highly recommend!"</p>
-      <p><strong>- John P.</strong></p>
+    <div class="value-box">
+      <h4>🕊️ Transparency</h4>
+      <p>We explain each step, risk, and opportunity clearly and honestly.</p>
     </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>
-      📍 Chicago, Illinois<br/>
-      📞 (Your Phone Number)<br/>
-      ✉️ info@immigrationgeneralservices.com
-    </p>
-    <p>
-      Reach out today and take the first step toward securing your future in the United States. We're here for you—because we understand.
-    </p>
-  </section>
-
-  <footer>
-    &copy; 2025 Immigration General Services LLC. All Rights Reserved.
-  </footer>
-</body>
-</html>
+    <div class="value-box">
+      <h4>⚖️ Commitment to the Law</h4>
+      <p>We operate strictly within U.S. legal guidelines, upholding justice and integrity.</p>
+    </div>
+    <div class="value-box">
+      <h4>🤝 Empathy</h4>
+      <p>We’ve lived the immigrant experience. We listen, support, and advocate from the heart.</p>
+    </div>
+  </div>
+</section>
