@@ -15,18 +15,11 @@
     footer { background-color: #004080; color: white; text-align: center; padding: 20px; margin-top: 40px; }
     .language-switcher { text-align: center; margin-top: 20px; }
     .language-switcher a { margin: 0 10px; color: #004080; text-decoration: underline; }
-    .testimonial { border-left: 5px solid #004080; margin: 20px 0; padding: 10px 20px; font-style: italic; background: #f0f4ff; }
-    .contact-form { margin-top: 20px; }
-    .contact-form input, .contact-form textarea, .contact-form button { width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
-    .contact-form button { background-color: #004080; color: white; border: none; cursor: pointer; }
-    .team-member { margin-bottom: 20px; }
-    .values { display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; }
-    .value-box { flex: 1 1 45%; background: #eef4ff; padding: 15px; border-left: 4px solid #004080; border-radius: 5px; }
     /* Carousel styles */
-    .carousel { position: relative; overflow: hidden; max-width: 100%; }
-    .carousel-track { display: flex; transition: transform 0.5s ease; }
-    .carousel figure { margin: 0; position: relative; }
-    .carousel img { width: 100%; height: 360px; object-fit: cover; display: block; }
+    .carousel { position: relative; overflow: hidden; max-width: 100%; height: 360px; }
+    .carousel-track { display: flex; transition: transform 0.5s ease; height: 100%; }
+    .carousel figure { margin: 0; position: relative; height: 100%; flex: 0 0 100%; }
+    .carousel img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .carousel .caption { position: absolute; left: 0; right: 0; bottom: 12px; text-align: center; color: #fff; text-shadow: 0 2px 6px rgba(0,0,0,.6); font-weight: 600; }
     .carousel button { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,.45); color: #fff; border: 0; padding: 10px 14px; cursor: pointer; border-radius: 6px; }
     .carousel button:hover { background: rgba(0,0,0,.65); }
@@ -63,24 +56,24 @@
     <div>Empowering immigrants with reliable, compassionate, and professional support</div>
   </div>
 
-  <!-- Image Carousel Section with fallbacks -->
+  <!-- Image Carousel Section -->
   <section style="padding:0; margin-top:-20px;">
     <div class="carousel" id="carousel">
       <div class="carousel-track" id="carouselTrack">
         <figure>
-          <img src="https://images.unsplash.com/photo-1581579188871-45ea61f2a0c8" alt="Immigrant Family" onerror="this.onerror=null;this.src='https://placehold.co/1600x600?text=Immigrant+Family';" />
+          <img src="https://images.unsplash.com/photo-1581579188871-45ea61f2a0c8?w=1600&h=600&fit=crop" alt="Immigrant Family" />
           <figcaption class="caption">Immigrant Family</figcaption>
         </figure>
         <figure>
-          <img src="https://images.unsplash.com/photo-1508051123996-69f8caf4891e" alt="Chicago Skyline" onerror="this.onerror=null;this.src='https://placehold.co/1600x600?text=Chicago+Skyline';" />
+          <img src="https://images.unsplash.com/photo-1508051123996-69f8caf4891e?w=1600&h=600&fit=crop" alt="Chicago Skyline" />
           <figcaption class="caption">Chicago Skyline</figcaption>
         </figure>
         <figure>
-          <img src="https://images.unsplash.com/photo-1588195537584-92097fd03741" alt="Houston Skyline" onerror="this.onerror=null;this.src='https://placehold.co/1600x600?text=Houston+Skyline';" />
+          <img src="https://images.unsplash.com/photo-1588195537584-92097fd03741?w=1600&h=600&fit=crop" alt="Houston Skyline" />
           <figcaption class="caption">Houston Skyline</figcaption>
         </figure>
         <figure>
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Orlando Skyline" onerror="this.onerror=null;this.src='https://placehold.co/1600x600?text=Orlando+Skyline';" />
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&h=600&fit=crop" alt="Orlando Skyline" />
           <figcaption class="caption">Orlando Skyline</figcaption>
         </figure>
       </div>
