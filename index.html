@@ -10,10 +10,9 @@
     *{box-sizing:border-box}
     body { margin: 0; font-family: Arial, Helvetica, sans-serif; background-color: var(--bg); color: #333; }
     header { background: var(--blue); color: #fff; }
-    .bar { max-width: 1100px; margin: 0 auto; display:flex; align-items:center; gap:16px; padding:16px; }
-    .brand { display:flex; align-items:center; gap:12px; }
-    .brand img{ height:44px; width:auto; display:block; }
-    .brand .title{ font-size:1.15rem; font-weight:700; letter-spacing:.4px; }
+    .bar { max-width: 1100px; margin: 0 auto; display:flex; justify-content:center; padding:16px; }
+    .brand { display:flex; flex-direction:column; align-items:center; gap:8px; text-align:center; }
+    .brand img{ height:90px; width:auto; display:block; }
     nav { background-color: var(--blue2); }
     .navwrap{ max-width:1100px; margin:0 auto; display:flex; justify-content:center; gap:24px; padding:10px; flex-wrap:wrap; }
     nav a { color: white; text-decoration: none; font-weight: 700; }
@@ -45,8 +44,7 @@
   <header>
     <div class="bar">
       <div class="brand">
-        <img src="logo.png" alt="Immigration General Services logo" onerror="this.style.display='none'">
-        <div class="title">Immigration General Services LLC</div>
+        <img src="logo.png" alt="Immigration General Services LLC">
       </div>
     </div>
   </header>
