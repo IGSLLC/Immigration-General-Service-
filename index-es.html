@@ -1,99 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Immigration General Services LLC</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #004080;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #0066cc;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: white;
-      margin: 5px 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      background: url('https://source.unsplash.com/1600x600/?immigration,diversity') no-repeat center center/cover;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-      font-size: 2.5em;
-      text-align: center;
-      padding: 0 10px;
-    }
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #004080;
-    }
-    footer {
-      background-color: #004080;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    .language-switcher {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .language-switcher a {
-      margin: 0 10px;
-      color: #004080;
-      text-decoration: underline;
-    }
-    .testimonial {
-      border-left: 5px solid #004080;
-      margin: 20px 0;
-      padding: 10px 20px;
-      font-style: italic;
-      background: #f0f4ff;
-    }
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; }
+    header { background-color: #004080; color: white; padding: 20px; text-align: center; }
+    nav { background-color: #0066cc; display: flex; justify-content: center; padding: 10px; flex-wrap: wrap; }
+    nav a { color: white; margin: 5px 15px; text-decoration: none; font-weight: bold; }
+    .hero { background: url('America.jpg') no-repeat center/cover; height: 400px; display: flex; align-items: center; justify-content: center; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); font-size: 2.0em; text-align: center; padding: 0 10px; }
+    section { max-width: 1000px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    h2 { color: #004080; }
+    footer { background-color: #004080; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    .language-switcher { text-align: center; margin-top: 20px; }
+    .language-switcher a { margin: 0 10px; color: #004080; text-decoration: underline; }
+    /* Carousel styles */
+    .carousel { position: relative; overflow: hidden; max-width: 100%; height: 360px; border-radius: 8px; background:#eee; }
+    .carousel-track { display: flex; transition: transform 0.5s ease; height: 100%; }
+    .carousel figure { margin: 0; height: 100%; flex: 0 0 100%; position: relative; }
+    .carousel img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .carousel button { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,.45); color: #fff; border: 0; padding: 10px 14px; cursor: pointer; border-radius: 6px; }
+    .carousel button:hover { background: rgba(0,0,0,.65); }
+    .carousel .prev { left: 10px; }
+    .carousel .next { right: 10px; }
   </style>
 </head>
 <body>
   <header>
     <h1>Immigration General Services LLC</h1>
-    <p>Su Centro Integral para Apoyo Migratorio</p>
+    <p>Your one-stop center for immigration support</p>
   </header>
 
   <nav>
-    <a href="#about">Sobre Nosotros</a>
-    <a href="#services">Servicios</a>
-    <a href="#testimonials">Testimonios</a>
-    <a href="#contact">Contacto</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#why">Why Choose Us</a>
+    <a href="#team">Our Team</a>
+    <a href="#values">Our Values</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <div class="language-switcher">
-    <p>Ver esta página en:
-      <a href="index-en.html">English</a> |
+    <p>View this page in:
+      <a href="index.html">English</a> |
       <a href="index-es.html">Español</a> |
       <a href="index-fr.html">Français</a> |
       <a href="index-pt.html">Português</a>
@@ -101,60 +52,106 @@
   </div>
 
   <div class="hero">
-    <div>
-      Empoderando a Inmigrantes con Apoyo Fiable, Amistoso y Profesional
-    </div>
+    <div>Empowering immigrants with reliable, compassionate, and professional support</div>
   </div>
 
+  <!-- Image Carousel Section -->
+  <section style="padding:0; margin-top:-20px;">
+    <div class="carousel" id="carousel">
+      <div class="carousel-track" id="carouselTrack">
+        <figure>
+          <img src="immigrant-family.jpeg" alt="Immigrant Family" />
+        </figure>
+        <figure>
+          <img src="Chicago.jpg" alt="Chicago Skyline" />
+        </figure>
+        <figure>
+          <img src="Houston.jpg" alt="Houston Skyline" />
+        </figure>
+        <figure>
+          <img src="success.jpg" alt="Orlando Skyline" />
+        </figure>
+      </div>
+      <button class="prev" aria-label="Previous slide" id="prevBtn">❮</button>
+      <button class="next" aria-label="Next slide" id="nextBtn">❯</button>
+    </div>
+  </section>
+
   <section id="about">
-    <h2>Sobre Nosotros</h2>
-    <p>
-      Immigration General Services LLC se basa en la creencia de que los inmigrantes merecen más que solo trámites legales: merecen respeto, comprensión y apoyo de personas que conocen su camino. Ofrecemos un entorno cálido e inclusivo donde nuestros clientes pueden recibir apoyo integral para sus trámites migratorios de principio a fin.
-    </p>
-    <p>
-      Lo conectamos con los mejores abogados, traductores certificados, asistentes legales y servicios notariales. Con nosotros, no necesita buscar en ningún otro lugar. Somos inmigrantes ayudando a inmigrantes.
-    </p>
+    <h2>About Us</h2>
+    <p>Immigration General Services LLC is built on the belief that immigrants deserve more than just legal paperwork—they deserve respect, understanding, and support from people who know their journey. We offer a warm, inclusive environment where our clients can receive comprehensive immigration support from start to finish.</p>
+    <p>We connect you with trusted attorneys, certified translators, trained paralegals, and public notaries. With us, you don’t have to search elsewhere. We are immigrants helping immigrants.</p>
   </section>
 
   <section id="services">
-    <h2>Nuestros Servicios</h2>
+    <h2>Our Services</h2>
     <ul>
-      <li>Preparación y presentación de formularios migratorios</li>
-      <li>Referencias de abogados y coordinación de representación legal</li>
-      <li>Traducción de documentos (certificada)</li>
-      <li>Asistencia paralegal para Asilo, TPS y Ajuste de Estatus</li>
-      <li>Servicios de Notaría Pública</li>
-      <li>Consultas estratégicas sobre su proceso migratorio</li>
-      <li>Apoyo en inglés, español, francés y portugués</li>
+      <li>Immigration Form Preparation & Filing</li>
+      <li>Attorney Referrals and Legal Representation Coordination</li>
+      <li>Document Translation (Certified)</li>
+      <li>Paralegal Assistance for Asylum, TPS, Adjustment of Status</li>
+      <li>Notary Public Services</li>
+      <li>Consultations on Your Immigration Strategy</li>
+      <li>Support in English, Spanish, French, and Portuguese</li>
+    </ul>
+  </section>
+
+  <section id="why">
+    <h2>Why Choose Us</h2>
+    <p>Many members of our team were once clients themselves. Today, they bring firsthand experience and deep empathy to help others on their journey. Our partner attorneys bring over 30 years of combined experience advocating for immigrant rights in court.</p>
+    <p>We have a proven record of success—in and out of court. Many of our former clients have achieved favorable outcomes and are now proud, productive members of their communities across the United States.</p>
+    <p>We know what you're going through—we've been there. That’s why we are fully committed to navigating the process with responsibility, transparency, and a steadfast dedication to the law.</p>
+  </section>
+
+  <section id="team">
+    <h2>Our Team</h2>
+    <p>Profiles and descriptions of our diverse and experienced team go here.</p>
+  </section>
+
+  <section id="values">
+    <h2>Our Values</h2>
+    <ul>
+      <li>Responsibility</li>
+      <li>Transparency</li>
+      <li>Commitment to the Law</li>
+      <li>Empathy</li>
     </ul>
   </section>
 
   <section id="testimonials">
-    <h2>Lo Que Dicen Nuestros Clientes</h2>
-    <div class="testimonial">
-      <p>"Immigration General Services realmente entiende lo que significa ser inmigrante. Me guiaron con paciencia y cuidado en cada paso del camino."</p>
-      <p><strong>- María G.</strong></p>
-    </div>
-    <div class="testimonial">
-      <p>"Profesionales, amables y eficientes. Hicieron que mi proceso migratorio fuera sencillo y sin estrés. ¡Altamente recomendados!"</p>
-      <p><strong>- Juan P.</strong></p>
-    </div>
+    <h2>Testimonials</h2>
+    <p>"Immigration General Services guided me patiently through every step. I felt understood and supported." — Maria G.</p>
+    <p>"Professional, kind, and efficient. They made a stressful process much easier." — John P.</p>
   </section>
 
   <section id="contact">
-    <h2>Contáctanos</h2>
-    <p>
-      📍 Chicago, Illinois<br/>
-      📞 (Su número de teléfono)<br/>
-      ✉️ info@immigrationgeneralservices.com
-    </p>
-    <p>
-      Contáctenos hoy mismo y dé el primer paso para asegurar su futuro en los Estados Unidos. Estamos aquí para usted—porque lo entendemos.
-    </p>
+    <h2>Contact</h2>
+    <p>📍 20 N Wacker Dr, Suite 1000, Chicago IL 60606<br>
+       📞 Tel: 331-209-5424<br>
+       ✉️ Email: info@immigrationgeneralservices.com</p>
   </section>
 
   <footer>
-    &copy; 2025 Immigration General Services LLC. Todos los derechos reservados.
+    &copy; 2025 Immigration General Services LLC. All Rights Reserved.
   </footer>
+
+  <script>
+    (function(){
+      const track = document.getElementById('carouselTrack');
+      if(!track) return;
+      const slides = Array.from(track.children);
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      let index = 0;
+      function goTo(i){ index = (i + slides.length) % slides.length; track.style.transform = 'translateX(' + (-index * 100) + '%)'; }
+      if(prevBtn) prevBtn.addEventListener('click', ()=> goTo(index-1));
+      if(nextBtn) nextBtn.addEventListener('click', ()=> goTo(index+1));
+      setInterval(()=> goTo(index+1), 4000);
+      let startX = null;
+      track.addEventListener('touchstart', (e)=>{ startX = e.touches[0].clientX; });
+      track.addEventListener('touchend', (e)=>{ if(startX===null) return; const dx = e.changedTouches[0].clientX - startX; if(Math.abs(dx)>40){ dx>0?goTo(index-1):goTo(index+1); } startX=null; });
+    })();
+  </script>
 </body>
 </html>
+
