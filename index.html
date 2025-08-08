@@ -1,14 +1,16 @@
 <!DOCTYPE html>
+<!-- index.html (ENGLISH, full page) -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Immigration General Services LLC</title>
-  <meta name="description" content="Immigration General Services LLC – one-stop immigration support for individuals and businesses: filings, translations, paralegal services, attorney coordination, and compliance."/>
+  <meta name="description" content="Immigration General Services LLC – one-stop immigration support for individuals and businesses: filings, translations, paralegal services, attorney coordination, and compliance." />
   <style>
     :root{ --blue:#004080; --blue2:#0066cc; --bg:#f9f9f9; --card:#fff; --shadow:0 2px 10px rgba(0,0,0,.1);} 
     *{box-sizing:border-box}
     body { margin: 0; font-family: Arial, Helvetica, sans-serif; background-color: var(--bg); color: #333; }
+
     /* Header with logo */
     header { background: var(--blue); color: #fff; }
     .bar { max-width: 1100px; margin: 0 auto; display:flex; align-items:center; gap:16px; padding:16px; }
@@ -38,10 +40,11 @@
     .carousel button { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,.45); color: #fff; border: 0; padding: 10px 14px; cursor: pointer; border-radius: 6px; }
     .carousel .prev { left: 10px; } .carousel .next { right: 10px; }
 
-    /* Services tiles that behave like tabs */
+    /* Services tiles */
     .tabs { display:flex; gap:12px; margin:12px 0 18px; flex-wrap:wrap; }
     .tab { flex:1 1 220px; display:block; background:#eef5ff; color:#0a3b8a; border:2px solid #cfe2ff; border-radius:10px; padding:14px 16px; text-align:center; font-weight:700; text-decoration:none; box-shadow: var(--shadow); }
     .tab:hover{ background:#e4efff; }
+
     .list { columns:2; column-gap:28px; padding-left:18px; }
     .list li{ break-inside:avoid; margin:6px 0; }
 
@@ -52,7 +55,7 @@
   <header>
     <div class="bar">
       <div class="brand">
-        <!-- Upload your logo file to the repo root as: logo.png -->
+        <!-- Put your logo file at repo root named exactly: logo.png -->
         <img src="logo.png" alt="Immigration General Services logo" onerror="this.style.display='none'">
         <div class="title">Immigration General Services LLC</div>
       </div>
@@ -102,7 +105,7 @@
     <p>We connect you with trusted attorneys, certified translators, trained paralegals, and public notaries. With us, you don’t have to search elsewhere. We are immigrants helping immigrants.</p>
   </section>
 
-  <!-- SERVICES: entry with two tabs/tiles that link to dedicated pages -->
+  <!-- SERVICES tiles linking to dedicated pages -->
   <section id="services">
     <h2>Our Services</h2>
     <div class="tabs">
@@ -170,3 +173,4 @@
   </script>
 </body>
 </html>
+
